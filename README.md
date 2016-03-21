@@ -3,6 +3,8 @@ A minimalist example of [PowerShell binary module](https://msdn.microsoft.com/en
 The module contains a single `Write-HelloWorld` cmdlet, whose name is self-explanatory:
 
 ```
+using System.Management.Automation;
+
 [Cmdlet(VerbsCommunications.Write, "HelloWorld")]
 public class HelloWorldCmdlet : Cmdlet
 {
@@ -12,6 +14,8 @@ public class HelloWorldCmdlet : Cmdlet
     }
 }
 ```
+
+(the `System.Management.Automation` reference is found at `c:\Program Files (x86)\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll`)
 
 The module manifest stores NuGet-style package info:
 
