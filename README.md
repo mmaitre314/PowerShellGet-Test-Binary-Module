@@ -2,6 +2,12 @@
 
 A minimalist example of [PowerShell binary module](https://msdn.microsoft.com/en-us/library/dd878342(v=vs.85).aspx) (.NET DLL) that can be published to the [PowerShell gallery](https://www.powershellgallery.com/) as [PowerShellGet](https://technet.microsoft.com/library/dn807169.aspx) package (aka NuGet).
 
+To install the package, run:
+
+```
+Install-Module -Name PowerShellGet-Test-Binary-Module -Scope CurrentUser
+```
+
 The module contains a single `Write-HelloWorld` cmdlet, whose name is self-explanatory:
 
 ```
